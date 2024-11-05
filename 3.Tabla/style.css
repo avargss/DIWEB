@@ -1,0 +1,35 @@
+* {
+    background-color: aliceblue;
+}
+
+.title {
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.2rem;
+}
+
+table {
+    text-align: center;
+    border: 2px solid black;
+    
+    
+}
+
+td, th {
+    border: 2px solid black;
+    border-collapse: collapse
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 27px;
+}
+
+iframe {
+    margin: 50px;
+}

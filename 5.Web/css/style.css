@@ -1,0 +1,510 @@
+* {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #141A32;
+    margin: 0;
+}
+
+header {
+    min-height: 270px;
+}
+
+
+/*-------MENU-------*/
+a.menutop {
+    margin-right: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+    padding: 24px 32px;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+menu {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.espaciado {
+    width: 100%;
+}
+
+menu div a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+menu div a:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    color: #ff4e33;
+}
+
+/*Cuando una etiqueta empieza por # y no por . es
+porque es un id. Se pone en el html igual que una
+class. */
+
+/*-------LOGO-------*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 22rem 22rem 4rem 22rem;
+}
+
+.logoimg {
+    width: 140rem;
+}
+
+.salida {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+    white-space: nowrap;
+    display: block;
+    color: white;
+}
+
+/*-------HOME MAIN-------*/
+.titlemap {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: white;
+    font-size: 6rem;
+    margin: 40rem 10rem 5rem 7.5rem;
+}
+
+.titmap {
+    font-size: 5rem;
+}
+
+.descmaps {
+    font-size: 3rem;
+}
+
+.orgmapas {
+    display: flex;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.textder {
+    text-align: justify;
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+/*Ambas etiquetas son iguales porque
+al poner la misma para los textos, los
+de la izquierda no tienen margen con el
+lateral izquierdo.*/
+
+.textizq {
+    text-align: justify;
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+main div p {
+    color: lightgray;
+}
+
+.imgmap {
+    display: flex;
+    float: left;
+    margin: 7rem;
+}
+
+/*-------HISTORIA-------*/
+
+.histmain {
+    height: 125rem;
+}
+
+.titlehist {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: white;
+    font-size: 6rem;
+    margin: 40rem 10rem 5rem 5rem;
+}
+
+.titlemisi {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: white;
+    font-size: 6rem;
+    margin: 10rem 10rem 5rem 5rem;
+}
+
+.videomisi {
+    display: flex;
+    justify-content: center;
+}
+
+.resumen {
+    font-size: 5rem;
+    text-align: justify;
+    margin: 5rem;
+}
+
+.listaord {
+    text-align: justify;
+    margin: 5rem;
+    color: white;
+}
+
+div ol li {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: white;
+    font-size: 5rem;
+}
+
+.resmision {
+    text-align: justify;
+    letter-spacing: 0.1px;
+    color: #d3d3d3;
+    font-size: 31.25px;
+}
+
+/*-------PILOTOS-------*/
+
+.pilotmain {
+    height: 105vh;
+    margin-top: 420px;
+    margin-bottom: 25px;
+}
+
+.pilotmain div h1 {
+    display: inline;
+    color: white;
+    font-size: 60px;
+    height: 65px;
+    margin: 60px 60px 60px 60px;
+}
+
+.tacticas {
+    display: flex;
+    justify-self: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    columns: 3;
+    padding: 16px 32px;
+    margin: 10rem;
+}
+
+section a {
+    flex: 1 1;
+    text-align: center;
+    margin: 16px;
+}
+
+section img {
+    border-radius: 4px;
+    width: 80%;
+    height: auto;
+    transition: 0.4s;
+}
+
+section img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(0);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+div table {
+    margin: 0 auto;
+}
+
+table {
+    border: 1px solid white;
+    color: white;
+    font-size: 10rem;
+    margin: 1px;
+    caption-side: top;
+}
+
+table caption {
+    margin: 1px;
+    text-align: center;
+    color: white;
+}
+
+table thead th {
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.tactica {
+    text-align: center;
+}
+
+table tbody td {
+    text-align: justify;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.divtitle {
+    display: flex;
+    justify-content: center;
+    margin: 20rem 22rem 4rem 22rem;
+}
+
+.title {
+    font-size: 14rem;
+    color: white !important;
+    margin-top: inherit;
+    margin-bottom: none;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+/*-------LEGADO-------*/
+
+.legmain {
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    height: 248vh;
+    margin-top: 350px;
+}
+
+.legmain div h1 {
+    display: inline;
+    color: white;
+    font-size: 6rem;
+    height: 65px;
+    margin: 60px 60px 60px 60px;
+}
+
+.legmain p {
+    text-align: justify;
+    color: lightgray;
+    font-size: 3rem;
+    margin: 6.5rem 6.5rem 2rem 6.5rem;
+}
+
+.temporadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    columns: 2;
+    padding: 16px 32px;
+    margin: 2rem 10rem 10rem 10rem;
+}
+
+.temporadas a {
+    flex: 1 1 35%;
+    text-align: center;
+    margin: 16px;
+}
+
+.temporadas img {
+    border-radius: 4px;
+    width: 80%;
+    height: auto;
+    transition: 0.4s;
+    margin: 50px;
+}
+
+.temporadas img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+    filter: blur(0);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+/*-------NOSOTROS-------*/
+
+.nosmain {
+    height: 95vh;
+    margin-top: 40rem;
+    margin-bottom: 40rem;
+}
+
+.nosmain div h1 {
+    display: inline;
+    color: white;
+    font-size: 6rem;
+    height: 65px;
+    margin: 60px 60px 60px 60px;
+}
+
+.nosmain p {
+    text-align: justify;
+    font-size: 3.5rem;
+    margin: 5rem;
+}
+
+.formulario {
+    border: 1px solid white;
+    width: 95%;
+    height: 70%;
+    background-color: #1d3557;
+    border-radius: 20px;
+    margin: 5rem;
+}
+
+.formulario h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin: 3rem;
+}
+
+.formulario h3 {
+    position: sticky;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+fieldset {
+    font-size: 3rem;
+    color: white;
+    margin: 3rem;
+    border-style: none;
+}
+
+.divform {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    justify-content: center;
+}
+
+label {
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 3rem;
+}
+
+input {
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.cuadrotexto {
+    text-align: center;
+    margin: 16px;
+}
+
+.cuadrotexto textarea {
+    width: 60%;
+    margin: 16px 32px;
+    font-size: 2.5rem;
+    color: black;
+    text-align: justify;
+}
+
+.enviar {
+    text-align: center;
+}
+
+.botonenviar {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+/*-------FOOTER-------*/
+footer {
+    font-size: 20px;
+    background-color: #101527;
+    height: 20%;
+    color: white;
+    padding: 20px;
+    transition-duration: 750ms;
+}
+
+.footcontact {
+    margin: 5rem;
+    max-width: 200px;
+}
+
+.imgfooter {
+    display: flex;
+    justify-content: center;
+}
+
+.titimg {
+    margin: 1.5rem;
+    max-width: 200px;
+}
+
+.rsocial {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 3rem;
+}
+
+hr {
+    margin: 0 auto;
+    color: white;
+    width: 90%;
+}
+
+.divgrid {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.divgrid a {
+    margin: 0 10px;
+}
+
+svg {
+    display: inline;
+    justify-content: space-between;
+    width: 50px;
+    transition: 0.4s;
+}
+
+svg:hover {
+    transform: scale(1.3);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}

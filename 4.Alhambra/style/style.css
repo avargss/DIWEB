@@ -1,0 +1,60 @@
+a.menutop {
+    margin-right: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+}
+
+menu {
+    display: flex;
+}
+
+menu div a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+    width: 65%;
+}
+
+a.titulo {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+label,
+input {
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}

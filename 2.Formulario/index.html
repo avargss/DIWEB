@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Ejemplo de formulario</h1>
+        <form action="#" method="POST">
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="dni">D.N.I.:</label>
+                <input type="text" id="dni" name="dni">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+
+                <label>Sexo:</label>
+                <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+            </fieldset>
+
+            <!-- Dirección -->
+            <fieldset>
+                <legend>Dirección</legend>
+                <label for="calle">Calle/Área:</label>
+                <input type="text" id="calle" name="calle">
+
+                <label for="poblacion">Población:</label>
+                <input type="text" id="poblacion" name="poblacion">
+
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia">
+                    <option value="almeria">Almería</option>
+                    <option value="granada">Granada</option>
+                    <option value="malaga">Málaga</option>
+                </select>
+            </fieldset>
+
+            <!-- Práctica en grupo -->
+            <fieldset>
+                <legend>Práctica en grupo</legend>
+                <label for="archivo">Archivo:</label>
+                <input type="file" id="archivo" name="archivo">
+
+                <label><input type="checkbox" name="archivo_comprimido"> Archivo comprimido</label>
+                <label><input type="checkbox" name="archivo_encriptado"> Archivo encriptado</label>
+
+                <label for="descripcion">Descripción de la práctica:</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Query">
+        </form>
+    </div>
+</body>
+
+</html>

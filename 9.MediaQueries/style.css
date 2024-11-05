@@ -1,0 +1,96 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.avanzados {
+    color: purple;
+}
+
+.mods {
+    color: purple;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+    .columnas {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .izquierda,
+    .derecha>div {
+        flex: 1;
+        /* Cada columna ocupa el mismo espacio */
+    }
+
+    /* Asegura que "Cursos avanzados" y "Cómo estudiar" se comporten como columnas individuales */
+    .derecha {
+        display: contents;
+        /* Quita el contenedor derecha y permite que sus hijos sean columnas independientes */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .columnas {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .izquierda,
+    .derecha {
+        flex: 1;
+    }
+
+    .derecha>div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1, h2 {
+        font-size: inherit; /* Deja el tamaño de fuente por defecto del navegador */
+    }
+}
+
+@media (max-width: 600px) {
+    .columnas {
+        flex-direction: column;
+    }
+
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+.columnas h1,
+.columnas h2 {
+    margin: 10px 0;
+}
+
+.columnas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columnas ul li {
+    margin: 5px 0;
+}
