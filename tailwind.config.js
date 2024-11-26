@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./13.TailwindCSS/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'tablet': '900px',
+      },
+    },
   },
   plugins: [],
+
+  darkMode: 'class',
+
 }
