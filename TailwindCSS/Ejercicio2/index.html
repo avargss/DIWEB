@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-[url('assets/images/fondo.jpg')] bg-cover bg-center">
+
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-sm">
+
+        <h2 class="text-3xl font-bold text-center text-orange-500 mb-6">Iniciar sesión</h2>
+
+        <form action="#" method="POST" class="space-y-6">
+
+            <div>
+                <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+                <input type="text" id="nombre" name="nombre"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Tu nombre">
+            </div>
+
+            <div>
+                <label for="correo" class="block text-sm font-medium text-gray-700">Correo</label>
+                <input type="email" id="correo" name="correo"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Tu correo electrónico">
+            </div>
+
+            <div>
+                <label for="contraseña" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Tu contraseña">
+            </div>
+
+
+            <div class="flex flex-col gap-4">
+                <button type="submit"
+                    class="w-full py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600 hover:text-black transition">Entrar</button>
+                <button type="reset"
+                    class="w-full py-2 bg-gray-300 text-black font-semibold rounded-md hover:bg-gray-400 hover:text-black transition">Borrar</button>
+            </div>
+
+            <p class="text-center text-sm mt-4">
+                <a href="registro.html" class="text-orange-500 hover:text-orange-600 transition">Nuevo usuario</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
