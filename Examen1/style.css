@@ -7,8 +7,13 @@
     font-style: normal;
 }
 
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", serif;
     background-color: #e4f9f5;
+    display: flex;
+    flex-direction: column;
 }
 
 a, button, .menu-icono {
@@ -16,6 +21,7 @@ a, button, .menu-icono {
 }
 
 header {
+    flex: 0 0 auto;
     background: linear-gradient(to right, rgb(222, 158, 45), rgb(48, 117, 90));
     display: flex;
     align-items: center;
@@ -55,11 +61,13 @@ header {
 }
 
 main {
-    padding: 25%;
+    flex: 1 1 auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .titulo {
@@ -136,6 +144,7 @@ button {
 }
 
 footer {
+    flex: 0 0 auto;
     background: radial-gradient(rgb(48, 117, 90), rgb(222, 158, 45));
     padding: 15px;
     text-align: center;
