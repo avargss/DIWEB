@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-[url('../assets/images/fondo.jpg')] bg-cover bg-center">
+    
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-sm sm:max-w-md lg:max-w-lg border-2 border-orange-300">
+        <h2 class="text-2xl font-bold text-center text-orange-500 mb-4">Registrar Nuevo Usuario</h2>
+        <form action="inicio-sesion.html" method="POST" class="space-y-4">
+
+            <div>
+                <label for="nombre" class="block text-sm font-medium text-orange-500">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Nombre">
+            </div>
+            <div>
+                <label for="correo" class="block text-sm font-medium text-orange-500">Correo:</label>
+                <input type="email" id="correo" name="correo"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Correo">
+            </div>
+
+            <div>
+                <label for="repetir-correo" class="block text-sm font-medium text-orange-500">Repita correo:</label>
+                <input type="email" id="repetir-correo" name="repetir-correo"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Correo">
+            </div>
+
+            <div>
+                <label for="contraseña" class="block text-sm font-medium text-orange-500">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    placeholder="Contraseña">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <section>
+                    <label class="block text-sm font-medium text-orange-500">Sexo:</label>
+                    <div class="flex gap-4 mt-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="sexo" value="hombre"
+                                class="text-orange-500 focus:ring-orange-500 focus:ring-2">
+                            Hombre
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="sexo" value="mujer"
+                                class="text-orange-500 focus:ring-orange-500 focus:ring-2">
+                            Mujer
+                        </label>
+                    </div>
+                </section>
+                <aside>
+                    <label for="instrumento" class="block text-sm font-medium text-orange-500">Instrumento:</label>
+                    <select id="instrumento" name="instrumento"
+                        class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                        <option value="">Seleccione</option>
+                        <option value="guitarra">Guitarra</option>
+                        <option value="piano">Piano</option>
+                        <option value="batería">Batería</option>
+                        <option value="violín">Violín</option>
+                    </select>
+                </aside>
+            </div>
+
+            <div>
+                <label for="fecha-nacimiento" class="block text-sm font-medium text-orange-500">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+            </div>
+
+            <div>
+                <label for="imagen" class="block text-sm font-medium text-orange-500">Elija imagen:</label>
+                <input type="file" id="imagen" name="imagen"
+                    class="mt-2 p-2 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50">
+            </div>
+
+            <div>
+                <button type="submit"
+                    class="w-full py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600 hover:text-black transition">
+                    Registrar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

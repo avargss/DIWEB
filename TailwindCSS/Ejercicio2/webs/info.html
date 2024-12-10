@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partituras</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .logo:hover {
+            transform: rotate(360deg);
+            transition: transform 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <header class="bg-orange-500 text-white py-6 text-center">
+        <div class="mx-auto w-20 h-20 flex justify-center items-center">
+            <svg class="logo w-16 h-16 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 5V2L3 7h5V5z"></path>
+                <path d="M15 3c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V3z"></path>
+                <path d="M20 7l-5 5h5V7z"></path>
+            </svg>
+        </div>
+        <h1 class="text-3xl font-bold">Bienvenido a la sección de Partituras</h1>
+    </header>
+
+    <div class="mt-10 text-center flex-1">
+        <h2 class="text-2xl font-semibold text-gray-800">Menú de Instrumentos</h2>
+        <nav class="mt-4">
+            <ul class="space-y-4">
+                <li><a href="#guitarra" class="text-lg text-orange-500 hover:text-orange-600">Guitarra</a></li>
+                <li><a href="#piano" class="text-lg text-orange-500 hover:text-orange-600">Piano</a></li>
+                <li><a href="#bateria" class="text-lg text-orange-500 hover:text-orange-600">Batería</a></li>
+                <li><a href="#violin" class="text-lg text-orange-500 hover:text-orange-600">Violín</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-6 text-center mt-auto">
+        <p>&copy; 2024 Alejandro Vargas Garrán | Fuentes usadas: Tailwind CSS, SVG icons</p>
+    </footer>
+
+</body>
+
+</html>
