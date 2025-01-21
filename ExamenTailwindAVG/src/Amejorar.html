@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen 1Trimestre</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body
+  class="bg-[url('../assets/fondo.jpg')] bg-cover bg-center bg-fixed bg-no-repeat text-[#0b3d33] font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header>
+    <nav class="grid grid-cols-3 p-4 bg-gradient-to-r from-azulado to-morado">
+      <div class="text-white text-xl">
+        <img src="../assets/barco.jpg" alt="Logo"
+          class="inline-block w-10 transform transition-transform duration-300 hover:rotate-[360deg] rounded-[70%]">
+      </div>
+      <ul class="col-span-2 grid grid-cols-3 justify-center space-x-4">
+        <li><a href="Amejorar.html" class="text-[#ffa726] hover:text-[#e4f9f5]">Inicio</a></li>
+        <li><a href="barcos.html" class="text-[#ffa726] hover:text-[#e4f9f5]">Servicios</a></li>
+        <li><a href="formulario.html" class="text-[#ffa726] hover:text-[#e4f9f5]">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="text-center py-16">
+    <section class="fondo text-black grid place-items-center">
+      <h1 class="text-4xl font-bold mb-4">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-azulado to-morado">Bienvenidos a
+          bordo</span>
+      </h1>
+      <p class="mt-4 text-lg">Texto introductorio sobre los servicios y beneficios de la web.</p>
+      <div class="cta-container mt-6">
+        <button class="bg-morado text-white py-2 px-4 rounded hover:bg-azulado">Más Información</button>
+      </div>
+    </section>
+
+    <section class="search-section mt-12 grid place-items-center">
+      <div class="grid grid-cols-[auto_auto] gap-2">
+        <input type="text" placeholder="Buscar..." autofocus
+          class="border border-gray-300 rounded-l px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-azulado">
+        <button
+          class="search-btn bg-azulado text-white px-4 py-2 rounded-r hover:bg-morado transition duration-200">🔍</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full p-4 text-center fixed bottom-0 left-0 z-10 bg-gradient-to-r from-azulado to-morado">
+    <ul class="grid grid-cols-2 justify-center gap-4">
+      <li><a href="#" class="text-[#ffa726] hover:text-[#e4f9f5]">Política de Privacidad</a></li>
+      <li><a href="#" class="text-[#ffa726] hover:text-[#e4f9f5]">Términos de Uso</a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-purple-200 font-sans">
+
+    <div class="grid place-items-center h-screen px-4">
+        <div class="bg-white shadow-md rounded-lg w-full max-w-4xl grid lg:grid-cols-3 overflow-hidden">
+
+            <!-- Lado izquierdo -->
+            <div class="bg-morado text-white p-8 flex flex-col items-center justify-center">
+                <img src="../assets/barco.jpg" alt="Barco" class="w-32 h-32 rounded-full mb-4">
+                <h2 class="text-2xl font-bold mb-2">Súbete a nuestro barco</h2>
+                <p class="text-center">Sólo tomará un par de minutos para unirte a nuestra comunidad.</p>
+            </div>
+
+
+            <div class="w-full lg:col-span-2 p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Formulario de Contacto</h2>
+                <form id="formulario" class="space-y-4" action="#" method="POST">
+                    <div>
+                        <label for="nombre" class="block text-gray-700 font-medium">Nombre</label>
+                        <input type="text" id="nombre"
+                            class="w-full border-2 border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-morado"
+                            required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-medium">Sexo</label>
+                        <div class="space-x-4">
+                            <label><input type="radio" name="sexo" value="masculino" class="mr-2" required>
+                                Masculino</label>
+                            <label><input type="radio" name="sexo" value="femenino" class="mr-2" required>
+                                Femenino</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="fechaNacimiento" class="block text-gray-700 font-medium">Fecha de Nacimiento</label>
+                        <input type="date" id="fechaNacimiento"
+                            class="w-full border-2 border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-morado"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium">Correo Electrónico</label>
+                        <input type="email" id="email"
+                            class="w-full border-2 border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-morado"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="telefono" class="block text-gray-700 font-medium">Teléfono</label>
+                        <input type="number" id="telefono" maxlength="10" placeholder="10 dígitos"
+                            class="w-full border-2 border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-morado"
+                            required pattern="\d{10}" title="El número de teléfono debe tener 10 dígitos">
+                    </div>
+
+                    <div class="flex justify-between">
+                        <button type="reset"
+                            class="bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400">Cancelar</button>
+                        <button type="submit" formaction="Amejorar.html"
+                            class="bg-morado text-white py-2 px-4 rounded hover:bg-purple-700">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
