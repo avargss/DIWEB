@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accesible y Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header role="banner">
+        <h1>Bienvenido a mi web</h1>
+        <nav aria-label="Menú principal">
+            <ul role="menubar">
+                <li role="none"><a href="#inicio" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="#servicios" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="inicio" aria-labelledby="inicio-titulo">
+            <h2 id="inicio-titulo">Inicio</h2>
+            <p>
+                Este es un ejemplo de una página web que cumple con altos estándares de accesibilidad, usando etiquetas
+                semánticas, buen contraste de colores y un diseño responsivo.
+            </p>
+        </section>
+
+        <section id="servicios" aria-labelledby="servicios-titulo">
+            <h2 id="servicios-titulo">Servicios</h2>
+            <article role="article" aria-labelledby="diseño-web">
+                <h3 id="diseño-web">Diseño Web</h3>
+                <p>Ofrecemos soluciones de diseño web modernas y accesibles para todo tipo de dispositivos.</p>
+            </article>
+            <article role="article" aria-labelledby="desarrollo">
+                <h3 id="desarrollo">Desarrollo</h3>
+                <p>Desarrollamos sitios y aplicaciones web adaptados a tus necesidades, garantizando una experiencia
+                    inclusiva.</p>
+            </article>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <form action="#" method="post" aria-labelledby="formulario-contacto">
+
+                <legend id="formulario-contacto">Formulario de Contacto</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" aria-describedby="telefono-ayuda"
+                        pattern="\d{3}-\d{3}-\d{4}">
+                    <span id="telefono-ayuda" class="ayuda">Formato: 123-456-7890</span>
+                </div>
+                <div>
+                    <label for="consulta">Tipo de consulta:</label>
+                    <select id="consulta" name="consulta" required aria-required="true">
+                        <option value="consulta-general">Consulta general</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
+                </div>
+
+                <button type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>© 2025 Mi Web</p>
+    </footer>
+</body>
+
+</html>
